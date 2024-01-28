@@ -43,5 +43,7 @@ However, I believe that all implementations should still be tested to ensure tha
 
 This paper presents a mechanized specification for the WebAssembly language using mechanised Isabelle specification, a verified executable interpreter, and a type checker. The author mentions that the main advantage of the specification is that the use of Isabelle's locale mechanism ensures that the proofs apply to all possible implementations and hosts.
 The specification work improved the original formal specification of the WebAssembly language by identifying several issues with the official specification. This influenced the development of the language and prompted corrections by the specification authors. In some cases, the deficiencies uncovered by the work rendered the original type system unsound.
+
 The specification of the WebAssembly language led to the derivation of several artefacts, including a verified executable interpreter and type checker and a mechanized proof of soundness of the WebAssembly type system.
+
 However, this specification does not remove the need for testing. While the mechanized Isabelle specification provides a formal foundation and ensures soundness, testing is still necessary to validate the implementation and potentially discover semantic bugs in commercial WebAssembly engines. The specification and verified artefacts serve as a strong foundation for testing and validation but do not eliminate the need for testing.
